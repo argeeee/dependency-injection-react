@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import React from 'react';
 
-function App() {
+const App: React.FC = () => {
   return (
     <div>
-      ciao
+      <h1>App</h1>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

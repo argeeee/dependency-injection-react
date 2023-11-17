@@ -21,6 +21,7 @@ export class ServiceLocator {
     }
 		else if (this.lazySingletons[key]) {
 			this.singletons[key] = this.lazySingletons[key]();
+      delete this.lazySingletons[key];
 			return this.singletons[key];
 		}
 		else if (this.types[key]) {
